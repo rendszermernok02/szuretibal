@@ -1,0 +1,36 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testhtml-deployment
+  labels:
+    app: testhtml
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: testhtml
+  template:
+    metadata:
+      labels:
+        app: testhtml
+    spec:
+      containers:
+      - name: testhtml
+        image: rendszermernok02/szuretibal
+        ports:
+        - containerPort: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: testhtml-deployment-service
+spec:
+  selector:
+    app: testhtml
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
