@@ -109,7 +109,7 @@ header {
 	}
 .cards {
 	width: 100%;
-	height: auto;
+	height: 200px;
 	max-width: 400px;
 	max-height: 200px;
 	opacity: 0.8;
@@ -171,7 +171,7 @@ footer {
 	background-color: #6DC7D0;
 }
 .profile {
-	width: 50%;
+	width: 85%;
 }
 .gallery .thumbnail .tag {
 	color: #5D5E5D;
@@ -261,7 +261,7 @@ footer {
 	width: 90%;
 	text-align: center;
 	padding-left: 0px;
-	color: #6DC7D0;
+	color: #FFF;
 }
 }
 
