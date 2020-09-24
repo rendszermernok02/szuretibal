@@ -5,9 +5,15 @@ metadata:
     service.beta.kubernetes.io/azure-load-balancer-resource-group: rg5
   name: testhtml
 spec:
-  loadBalancerIP: x.x.x.x
+  loadBalancerIP: 51.138.114.89
   type: LoadBalancer
   ports:
   - port: 80
+    targetPort: 80
+    protocol: TCP
   selector:
     app: testhtml
+  status:
+    loadBalancer:
+      ingress:
+      - ip: 51.138.114.89
