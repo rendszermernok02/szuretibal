@@ -3,13 +3,11 @@ kind: Service
 metadata:
   annotations:
     service.beta.kubernetes.io/azure-load-balancer-resource-group: rg5
-  name: testhtml
+  name: testhtml-loadbalancer
 spec:
-  loadBalancerIP: 51.138.114.89
+  loadBalancerIP: 51.140.94.151
   type: LoadBalancer
   ports:
-  - port: 80
-    targetPort: 80
-    protocol: TCP
+  - port: 433
   selector:
     app: testhtml
