@@ -8,6 +8,6 @@ spec:
   loadBalancerIP: 51.140.94.151
   type: LoadBalancer
   ports:
-  - port: 433
+  - port: 80
   selector:
     app: testhtml
