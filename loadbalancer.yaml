@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    service.beta.kubernetes.io/azure-load-balancer-resource-group: rg5
+    service.beta.kubernetes.io/azure-load-balancer-resource-group: rg-5
   name: testhtml-loadbalancer
 spec:
   loadBalancerIP: 51.140.94.151
