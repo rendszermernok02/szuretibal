@@ -13,7 +13,3 @@ spec:
     protocol: TCP
   selector:
     app: testhtml
-  status:
-    loadBalancer:
-      ingress:
-      - ip: 51.138.114.89
