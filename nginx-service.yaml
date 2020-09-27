@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: testhtml
+spec:
+  selector:
+    app: testhtml
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+  externalIPs:
+    - 10.2.21.203
